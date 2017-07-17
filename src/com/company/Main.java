@@ -18,7 +18,16 @@ public class Main {public static void main(String[] args) {
 
        double operand2 = Double.parseDouble(userInput2);
 
-      showResults(operand1, operand2);
+
+
+    double sum = operand1 + operand2;
+    double difference =  operand1 - operand2;
+    double division =  operand1 / operand2;
+    double multiplication =  operand1 * operand2;
+    double remainder =  operand1 % operand2;
+
+
+    showResults(sum, difference, division, multiplication, remainder);
 
 
 
@@ -35,12 +44,7 @@ public class Main {public static void main(String[] args) {
 }
 
 
-	public static void showResults( double  x , double  y ){
-         double sum = x + y;
-         double difference =  x - y;
-         double division =  x / y;
-         double multiplication =  x * y;
-         double remainder =  x % y;
+	public static void showResults(double sum , double difference, double division, double multiplication, double remainder ){
           System.out.println( "the sum is " + sum);
           System.out.println( "the difference is " + difference);
           System.out.println( "the Quatient is " + division);
